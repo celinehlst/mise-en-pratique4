@@ -10,7 +10,7 @@ const app = createApp(App)
 app.use(router)
 app.use(VueCookies)
 
-const userToken = ref('')
+const userToken = ref($cookies.get('token'))
 const updateUserToken = (value) => {
   userToken.value = value
   alert('Changement effecuté')
