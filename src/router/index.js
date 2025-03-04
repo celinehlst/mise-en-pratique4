@@ -21,6 +21,7 @@ const router = createRouter({
       name: 'payment',
       component: () => import('../views/PaymentView.vue'),
       meta: { requireAuth: true },
+      props: true,
     },
   ],
 })
